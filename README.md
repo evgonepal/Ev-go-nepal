@@ -1,167 +1,839 @@
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#06120f">
-<title>EV Go Nepal | Electric Car Rentals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101713">
+<meta name="description" content="EV Go Nepal offers electric vehicle rental enquiries, airport transfers, city rides and EV owner partnerships in Nepal.">
+<title>EV Go Nepal | Premium Electric Car Rentals</title>
+
 <style>
-:root{--bg:#06120f;--card:#10251d;--green:#a5ff68;--white:#f5faf5;--muted:#b0c2b7}
+:root {
+  --bg:#101713;
+  --surface:#18221b;
+  --surface2:#222e24;
+  --green:#b9f36b;
+  --text:#f5f7f2;
+  --muted:#a6b2a7;
+  --border:#303d32;
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.6}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;line-height:1.65
+}
 a{color:inherit;text-decoration:none}
-.wrap{width:92%;max-width:1150px;margin:auto}
-header{position:sticky;top:0;z-index:10;background:#06120ff5;border-bottom:1px solid #294338}
-nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.logo{font-size:20px;font-weight:900}
-.green,.logo span{color:var(--green)}
-.links{display:flex;gap:15px;font-size:13px}
-.btn{display:inline-block;text-align:center;padding:11px 15px;border-radius:7px;background:var(--green);color:#10200d;font-weight:bold;font-size:13px}
-.outline{background:transparent;color:white;border:1px solid #668071}
-.hero{padding:60px 0 38px;background:radial-gradient(ellipse at 80% 20%,#234b30,transparent 45%),repeating-linear-gradient(135deg,transparent 0 35px,#ffffff04 36px 37px)}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
-.tag{color:var(--green);font-size:11px;letter-spacing:2px;font-weight:bold}
-h1{font-size:clamp(40px,6vw,68px);line-height:1.05;letter-spacing:-2px;margin:17px 0}
-h2{font-size:clamp(27px,4vw,38px);line-height:1.2;margin:8px 0}
-p{margin-top:8px}
-.muted{color:var(--muted);font-size:13px}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
-.hero-art{border:1px solid #315442;border-radius:16px;padding:12px;background:linear-gradient(145deg,#19382b,#091712)}
-.hero-art svg{display:block;width:100%;height:auto}
-section{padding:45px 0}
-.fleet{background:radial-gradient(ellipse at top,#153a29,transparent 65%)}
-.section-head{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-bottom:22px}
-.cars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.car{border:1px solid #2d4b3d;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#11281f,#091611)}
-.car-art{height:155px;display:flex;align-items:center;justify-content:center;padding:10px;background:radial-gradient(ellipse,#234334,#0b1b14)}
-.car-art svg{width:100%;max-width:310px;height:auto}
-.car-info{padding:15px}
-.car-info h3{font-size:17px;margin:0}
-.car-info p{font-size:12px;color:var(--muted);margin:4px 0}
-.pills{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
-.pill{font-size:10px;border:1px solid #456451;border-radius:30px;padding:3px 8px}
-.car-info .btn{display:block;margin-top:12px}
-.notice{font-size:12px;color:var(--muted);margin-top:18px}
-.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.tile{padding:18px;border:1px solid #294638;border-radius:11px;background:var(--card)}
-.tile h3{font-size:15px;margin:6px 0}
-.tile p{font-size:12px;color:var(--muted);margin:0}
-.symbol{font-size:25px;color:var(--green)}
-.why{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.why article{padding:17px;border-left:2px solid var(--green);background:#0c1e17}
-.cta{padding:28px;border:1px solid #365b3d;border-radius:15px;background:linear-gradient(120deg,#16452b,#0c251c)}
-.cta p{max-width:550px;color:var(--muted)}
-footer{border-top:1px solid #294338;padding:25px 0;color:var(--muted);font-size:12px}
-@media(min-width:1000px){.cars{grid-template-columns:repeat(5,minmax(0,1fr))}.car-art{height:135px}.car-info{padding:12px}}
-@media(max-width:700px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:500px;margin:auto;width:100%}.cars{grid-template-columns:repeat(2,minmax(0,1fr))}.services{grid-template-columns:repeat(2,minmax(0,1fr))}.why{grid-template-columns:1fr}}
-@media(max-width:420px){.wrap{width:94%}.logo{font-size:15px}.links{gap:9px;font-size:11px}.navbook{display:none}.hero{padding-top:38px}.car-art{height:105px;padding:5px}.car-info{padding:9px}.car-info h3{font-size:13px}.car-info .btn{font-size:11px;padding:9px 3px}.pill{font-size:9px}}
+button,input,select,textarea{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+img{max-width:100%}
+.container{width:92%;max-width:1160px;margin:auto}
+section{padding:76px 0}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.7px}
+h1{font-size:clamp(39px,6.5vw,72px);margin:17px 0}
+h2{font-size:clamp(30px,4.5vw,46px);margin:12px 0}
+h3{font-size:21px}
+p{overflow-wrap:break-word}
+.muted{color:var(--muted)}
+.eyebrow{
+  color:var(--green);font-size:11px;font-weight:800;
+  letter-spacing:2.5px;text-transform:uppercase
+}
+.section-head{max-width:700px;margin-bottom:32px}
+.section-head p{color:var(--muted)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:8px;padding:12px 19px;border:1px solid var(--border);
+  border-radius:100px;font-weight:750;cursor:pointer;
+  transition:transform .2s,background .2s
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--green);color:#15200f;border-color:var(--green)}
+.btn-outline{background:transparent;color:var(--text)}
+.btn-small{font-size:13px;padding:9px 14px}
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(16,23,19,.96);backdrop-filter:blur(15px);
+  border-bottom:1px solid var(--border)
+}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:17px}
+.brand-icon{
+  display:grid;place-items:center;background:var(--green);
+  color:#14200f;width:41px;height:41px;border-radius:13px;font-weight:1000
+}
+.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:2px}
+.nav-links{display:flex;align-items:center;gap:21px;font-size:13px}
+.nav-links a:hover{color:var(--green)}
+.menu-btn{
+  display:none;color:white;background:var(--surface);
+  border:1px solid var(--border);padding:9px 12px;border-radius:10px
+}
+/* Hero */
+.hero{
+  padding:76px 0 54px;
+  background:
+    radial-gradient(ellipse at 83% 30%,rgba(185,243,107,.11),transparent 38%),
+    repeating-linear-gradient(135deg,transparent 0,transparent 42px,rgba(255,255,255,.015) 43px,transparent 44px)
+}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:38px}
+.hero-copy>p{color:var(--muted);max-width:560px;font-size:17px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+.hero-points{display:flex;gap:16px;flex-wrap:wrap;color:#d3ded2;font-size:12px}
+.hero-image{
+  overflow:hidden;min-width:0;border:1px solid var(--border);
+  border-radius:25px;background:linear-gradient(145deg,#2b3b2d,#151c17);
+  position:relative
+}
+.hero-image img{
+  display:block;width:100%;aspect-ratio:5/4;
+  object-fit:cover;object-position:center
+}
+.hero-image-caption{
+  padding:15px 18px;display:flex;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;font-size:12px;color:#d7e1d5
+}
+.hero-image-caption span:last-child{color:var(--green)}
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  margin-top:42px;border:1px solid var(--border);
+  border-radius:16px;overflow:hidden;background:var(--border)
+}
+.stat{background:var(--bg);padding:17px}
+.stat strong{display:block;color:var(--green);font-size:15px}
+.stat span{font-size:11px;color:var(--muted)}
+/* Fleet */
+#fleet{background:#131a15}
+.fleet-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.car-card{
+  min-width:0;overflow:hidden;border:1px solid var(--border);
+  border-radius:19px;background:var(--surface);
+  transition:transform .2s,border-color .2s
+}
+.car-card:hover{transform:translateY(-4px);border-color:var(--green)}
+.car-photo{
+  position:relative;overflow:hidden;aspect-ratio:16/10;
+  background:#263229
+}
+.car-photo img{
+  display:block;width:100%;height:100%;object-fit:cover;
+  object-position:center
+}
+.car-label{
+  position:absolute;top:12px;left:12px;background:#101713ed;
+  color:var(--green);font-size:10px;font-weight:bold;
+  padding:6px 10px;border-radius:30px
+}
+.car-info{padding:20px}
+.car-info h3{margin:8px 0 5px}
+.car-description{font-size:12px;color:var(--muted)}
+.car-specs{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:18px 0}
+.car-spec{padding:10px;background:var(--surface2);border-radius:10px;min-width:0}
+.car-spec span{display:block;color:var(--muted);font-size:10px}
+.car-spec strong{font-size:12px;overflow-wrap:anywhere}
+.car-book{display:flex;width:100%;font-size:12px}
+.disclaimer{font-size:12px;color:var(--muted);margin-top:23px}
+/* Services */
+.service-grid,.benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.info-card{padding:23px;background:var(--surface);border:1px solid var(--border);border-radius:17px}
+.info-icon{
+  display:grid;place-items:center;width:44px;height:44px;
+  background:#28372a;color:var(--green);border-radius:13px;
+  font-size:21px;margin-bottom:19px
+}
+.info-card h3{font-size:18px}
+.info-card p{color:var(--muted);font-size:13px;margin-bottom:0}
+/* About and partnerships */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.feature-panel{
+  padding:30px;border-radius:22px;border:1px solid var(--border);
+  background:linear-gradient(145deg,#202d22,#141b16)
+}
+.check-list{list-style:none;padding:0;margin:23px 0}
+.check-list li{margin:13px 0;font-size:14px;color:#d6e0d4}
+.check-list li:before{content:"✓";color:var(--green);font-weight:bold;margin-right:10px}
+.steps{margin-top:25px}
+.step{display:flex;gap:14px;margin:20px 0}
+.step-number{
+  flex:none;display:grid;place-items:center;width:35px;height:35px;
+  background:var(--green);color:#15200f;border-radius:50%;font-weight:bold
+}
+.step p{color:var(--muted);font-size:13px;margin:5px 0 0}
+/* Booking */
+#contact{background:#131a15}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}
+.contact-detail{margin:20px 0}
+.contact-detail span{display:block;color:var(--muted);font-size:12px}
+.contact-detail a{font-weight:bold;overflow-wrap:anywhere}
+.form-panel{padding:26px;border:1px solid var(--border);border-radius:21px;background:var(--surface)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:bold;color:#dfe7dc}
+.field input,.field select,.field textarea{
+  width:100%;min-width:0;padding:12px;border-radius:10px;
+  background:#101713;color:white;border:1px solid #39483b;outline:none
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green)}
+.field select option{background:#18221b}
+.field textarea{resize:vertical;min-height:95px}
+.form-panel button{width:100%;margin-top:17px}
+.form-help{font-size:11px;color:var(--muted);margin:10px 0 0}
+/* FAQ */
+.faq-list{max-width:800px}
+details{padding:19px 0;border-bottom:1px solid var(--border)}
+summary{font-size:15px;font-weight:bold;cursor:pointer}
+details p{color:var(--muted);font-size:13px;margin:12px 0 0}
+footer{padding:42px 0 90px;border-top:1px solid var(--border)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.footer-title{font-weight:bold;margin-bottom:12px}
+footer p,footer li{color:var(--muted);font-size:12px}
+footer ul{list-style:none;padding:0}
+footer li{margin:9px 0}
+.copyright{border-top:1px solid var(--border);padding-top:18px;margin-top:25px;color:var(--muted);font-size:11px}
+.whatsapp-float{
+  position:fixed;bottom:17px;right:17px;z-index:40;
+  background:var(--green);color:#15200f;padding:13px 17px;
+  border-radius:100px;font-size:13px;font-weight:bold;
+  box-shadow:0 5px 25px #0006
+}
+@media(max-width:950px){
+  .hero-grid,.split,.contact-grid{grid-template-columns:1fr}
+  .hero-image{max-width:700px}
+  .fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service-grid,.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:650px){
+  section{padding:57px 0}
+  .nav{min-height:66px}
+  .menu-btn{display:block}
+  .nav-links{
+    display:none;position:absolute;top:66px;left:0;right:0;
+    padding:20px 4% 24px;background:#101713;
+    border-bottom:1px solid var(--border);
+    flex-direction:column;align-items:stretch;gap:17px
+  }
+  .nav-links.open{display:flex}
+  .nav-links .btn{align-self:flex-start}
+  .hero{padding-top:48px}
+  .hero-grid{gap:26px}
+  .stats{margin-top:30px}
+  .stat{padding:12px 8px}
+  .stat strong{font-size:12px}
+  .stat span{font-size:10px}
+  .fleet-grid,.service-grid,.benefit-grid{grid-template-columns:1fr}
+  .car-photo{aspect-ratio:16/9}
+  .form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .form-panel,.feature-panel{padding:20px}
+  .footer-grid{grid-template-columns:1fr;gap:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important}
+}
 </style>
 </head>
+
 <body>
 <header>
-<nav class="wrap">
-<a class="logo" href="#home">EV GO <span>NEPAL.</span></a>
-<div class="links"><a href="#home">Home</a><a href="#fleet">Fleet</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
-<a class="btn navbook" href="#contact">Book a Ride</a>
-</nav>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <span class="brand-icon">EV</span>
+      <span>EV GO NEPAL<small>MOVE ELECTRIC</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false"
+      aria-controls="navLinks" type="button">☰ Menu</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#fleet">Our Fleet</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#partners">Partner With Us</a>
+      <a href="#contact" class="btn btn-primary btn-small">Book a Ride ↗</a>
+    </nav>
+  </div>
 </header>
 
 <main>
+<!-- HERO -->
 <section class="hero" id="home">
-<div class="wrap hero-grid">
-<div>
-<div class="tag">ELECTRIC MOBILITY · NEPAL</div>
-<h1>Explore Nepal<br><span class="green">the Electric Way.</span></h1>
-<p class="muted">Discover electric car journeys for city rides, airport transfers and trips beyond Kathmandu with EV Go Nepal.</p>
-<div class="actions">
-<a class="btn" href="https://wa.me/9779761118740?text=Hello%20EV%20Go%20Nepal%2C%20I%20want%20to%20book%20a%20ride.">Book on WhatsApp ↗</a>
-<a class="btn outline" href="#fleet">View Our Fleet ↓</a>
-</div>
-<p class="muted">✓ Direct booking &nbsp; ✓ Electric travel &nbsp; ✓ Clear trip details</p>
-</div>
-<div class="hero-art">
-<div class="tag">EV GO NEPAL / PREMIUM MOBILITY</div>
-<svg viewBox="0 0 500 280" role="img" aria-label="Decorative electric SUV illustration">
-<defs><linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0e9df"/><stop offset=".5" stop-color="#779987"/><stop offset="1" stop-color="#304b3c"/></linearGradient></defs>
-<ellipse cx="250" cy="226" rx="190" ry="17" fill="#000" opacity=".4"/>
-<path d="M43 184 L62 151 Q70 139 99 132 L153 76 Q164 64 185 64 L315 64 Q334 66 351 87 L398 140 L435 154 Q450 163 450 184 L444 202 L44 202Z" fill="url(#body)" stroke="#c8dfce" stroke-width="2"/>
-<path d="M126 131 L168 83 Q175 76 190 76 L229 76 L229 132Z" fill="#15372e" stroke="#91b6a2" stroke-width="2"/>
-<path d="M240 76 L310 76 Q328 78 339 96 L366 132 L240 132Z" fill="#15372e" stroke="#91b6a2" stroke-width="2"/>
-<path d="M47 169 L105 166 L105 181 L46 184Z" fill="#a5ff68"/><path d="M401 157 L439 170 L438 181 L406 177Z" fill="#ff7563"/>
-<path d="M238 139 L238 194 M374 140 L387 184" stroke="#344e3d" stroke-width="3"/>
-<circle cx="151" cy="200" r="33" fill="#07110d" stroke="#789483" stroke-width="4"/><circle cx="151" cy="200" r="14" fill="#a5ff68"/>
-<circle cx="373" cy="200" r="33" fill="#07110d" stroke="#789483" stroke-width="4"/><circle cx="373" cy="200" r="14" fill="#a5ff68"/>
-<text x="250" y="265" fill="#a5ff68" font-size="12" text-anchor="middle" letter-spacing="3">MOVE GREEN · EXPLORE MORE</text>
-</svg>
-</div>
-</div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Electric mobility · Nepal</div>
+        <h1>Your Journey.<br>Our <span style="color:var(--green)">Electric</span> Drive.</h1>
+        <p>
+          Discover a smarter way to travel. EV Go Nepal connects you
+          with electric vehicle rental options for city travel,
+          airport transfers, business trips and journeys across Nepal.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#fleet">Explore Our Fleet ↗</a>
+          <a class="btn btn-outline" href="#contact">Plan Your Trip</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Multiple vehicle options</span>
+          <span>✓ Personalised enquiries</span>
+          <span>✓ Direct communication</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85"
+          alt="Premium automotive photography"
+          fetchpriority="high"
+          onerror="this.onerror=null;this.src='https://placehold.co/900x700/202d22/b9f36b?text=EV+Go+Nepal';">
+        <div class="hero-image-caption">
+          <span>Electric journeys start here.</span>
+          <span>EV GO NEPAL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><strong>Flexible Travel</strong><span>Choose your trip type</span></div>
+      <div class="stat"><strong>Electric Options</strong><span>Explore available EVs</span></div>
+      <div class="stat"><strong>Easy Enquiry</strong><span>Contact us directly</span></div>
+    </div>
+  </div>
 </section>
 
-<section class="fleet" id="fleet">
-<div class="wrap">
-<div class="section-head"><div><div class="tag">OUR FLEET</div><h2>Choose Your Perfect Ride</h2></div><p class="muted">Electric vehicles · Enquire for availability</p></div>
-<div class="cars">
+<!-- FLEET -->
+<section id="fleet">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Discover the collection</div>
+      <h2>Find Your Perfect EV.</h2>
+      <p>Explore electric vehicle options for your next journey.
+      Vehicle availability, exact model, variant and pricing are confirmed individually.</p>
+    </div>
 
-<article class="car">
-<div class="car-art"><svg viewBox="0 0 300 130" role="img" aria-label="Stylized BYD Atto 2 compact SUV"><path d="M20 88L40 65L78 54L103 30Q110 25 126 25H197Q215 30 229 52L250 66L276 77L280 98H20Z" fill="#c7d5ca" stroke="#eff8f0" stroke-width="2"/><path d="M84 53L109 33H142V55H82ZM151 33H193Q205 37 216 55H151Z" fill="#183b30" stroke="#779a86" stroke-width="2"/><path d="M24 79H57V88H22Z" fill="#a5ff68"/><circle cx="79" cy="98" r="20" fill="#08110d" stroke="#718b7a" stroke-width="4"/><circle cx="79" cy="98" r="8" fill="#a5ff68"/><circle cx="226" cy="98" r="20" fill="#08110d" stroke="#718b7a" stroke-width="4"/><circle cx="226" cy="98" r="8" fill="#a5ff68"/></svg></div>
-<div class="car-info"><h3>BYD Atto 2</h3><p>Compact electric SUV</p><div class="pills"><span class="pill">5 seats</span><span class="pill">Electric</span></div><a class="btn" href="https://wa.me/9779761118740?text=Enquiry%20for%20BYD%20Atto%202">Enquire Now ↗</a></div>
-</article>
+    <div class="fleet-grid">
 
-<article class="car">
-<div class="car-art"><svg viewBox="0 0 300 130" role="img" aria-label="Stylized Tata Nexon EV SUV"><path d="M20 88L38 66L73 55L99 31Q110 25 126 28L197 31Q215 34 230 54L250 67L277 78L280 98H20Z" fill="#65b4cf" stroke="#d3f4ff" stroke-width="2"/><path d="M81 54L106 34H141V56H81ZM150 35H193Q205 38 217 56H150Z" fill="#173947" stroke="#9bd8e8" stroke-width="2"/><path d="M24 79H57V88H22Z" fill="#e9fcff"/><circle cx="79" cy="98" r="20" fill="#08110d" stroke="#91b6c2" stroke-width="4"/><circle cx="79" cy="98" r="8" fill="#a5ff68"/><circle cx="226" cy="98" r="20" fill="#08110d" stroke="#91b6c2" stroke-width="4"/><circle cx="226" cy="98" r="8" fill="#a5ff68"/></svg></div>
-<div class="car-info"><h3>Tata Nexon EV</h3><p>Electric SUV</p><div class="pills"><span class="pill">5 seats</span><span class="pill">Electric</span></div><a class="btn" href="https://wa.me/9779761118740?text=Enquiry%20for%20Tata%20Nexon%20EV">Enquire Now ↗</a></div>
-</article>
+      <article class="car-card">
+        <div class="car-photo">
+          <span class="car-label">COMPACT SUV</span>
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80"
+            alt="Automotive photo reference for BYD Atto 2"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/263128/b9f36b?text=BYD+Atto+2';">
+        </div>
+        <div class="car-info">
+          <div class="eyebrow">01 · Urban explorer</div>
+          <h3>BYD Atto 2</h3>
+          <div class="car-description">Compact electric SUV</div>
+          <div class="car-specs">
+            <div class="car-spec"><span>Seating</span><strong>5 passengers</strong></div>
+            <div class="car-spec"><span>Power</span><strong>Electric</strong></div>
+            <div class="car-spec"><span>Ideal for</span><strong>City trips</strong></div>
+            <div class="car-spec"><span>Price</span><strong>Request quote</strong></div>
+          </div>
+          <a href="#contact" class="btn btn-primary car-book" data-car="BYD Atto 2">Enquire About This Car ↗</a>
+        </div>
+      </article>
 
-<article class="car">
-<div class="car-art"><svg viewBox="0 0 300 130" role="img" aria-label="Stylized BYD Dolphin electric hatchback"><path d="M23 89L40 70L77 60L103 39Q112 31 130 32H191Q210 35 224 57L246 70L275 80L279 99H21Z" fill="#d7b8e9" stroke="#f5e9ff" stroke-width="2"/><path d="M84 59L111 40H142V61H83ZM151 40H189Q204 44 213 61H151Z" fill="#352649" stroke="#c6a9d8" stroke-width="2"/><path d="M24 80H57V89H22Z" fill="#fff"/><circle cx="79" cy="99" r="19" fill="#08110d" stroke="#bda4ca" stroke-width="4"/><circle cx="79" cy="99" r="8" fill="#a5ff68"/><circle cx="226" cy="99" r="19" fill="#08110d" stroke="#bda4ca" stroke-width="4"/><circle cx="226" cy="99" r="8" fill="#a5ff68"/></svg></div>
-<div class="car-info"><h3>BYD Dolphin</h3><p>Electric hatchback</p><div class="pills"><span class="pill">5 seats</span><span class="pill">Electric</span></div><a class="btn" href="https://wa.me/9779761118740?text=Enquiry%20for%20BYD%20Dolphin">Enquire Now ↗</a></div>
-</article>
+      <article class="car-card">
+        <div class="car-photo">
+          <span class="car-label">ELECTRIC SUV</span>
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80"
+            alt="SUV photo reference for Tata Nexon EV"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/263128/b9f36b?text=Tata+Nexon+EV';">
+        </div>
+        <div class="car-info">
+          <div class="eyebrow">02 · Everyday comfort</div>
+          <h3>Tata Nexon EV</h3>
+          <div class="car-description">Compact electric SUV</div>
+          <div class="car-specs">
+            <div class="car-spec"><span>Seating</span><strong>5 passengers</strong></div>
+            <div class="car-spec"><span>Power</span><strong>Electric</strong></div>
+            <div class="car-spec"><span>Ideal for</span><strong>City & highway</strong></div>
+            <div class="car-spec"><span>Price</span><strong>Request quote</strong></div>
+          </div>
+          <a href="#contact" class="btn btn-primary car-book" data-car="Tata Nexon EV">Enquire About This Car ↗</a>
+        </div>
+      </article>
 
-<article class="car">
-<div class="car-art"><svg viewBox="0 0 300 130" role="img" aria-label="Stylized MG ZS EV SUV"><path d="M20 88L39 65L75 55L101 31Q111 24 128 26H198Q216 30 229 52L250 67L276 77L280 98H20Z" fill="#d4ddd6" stroke="#f4faf5" stroke-width="2"/><path d="M82 54L108 33H142V55H82ZM151 34H194Q205 38 217 55H151Z" fill="#293e36" stroke="#9db7a8" stroke-width="2"/><path d="M24 79H57V88H22Z" fill="#a5ff68"/><circle cx="79" cy="98" r="20" fill="#08110d" stroke="#899c90" stroke-width="4"/><circle cx="79" cy="98" r="8" fill="#a5ff68"/><circle cx="226" cy="98" r="20" fill="#08110d" stroke="#899c90" stroke-width="4"/><circle cx="226" cy="98" r="8" fill="#a5ff68"/></svg></div>
-<div class="car-info"><h3>MG ZS EV</h3><p>Electric SUV</p><div class="pills"><span class="pill">5 seats</span><span class="pill">Electric</span></div><a class="btn" href="https://wa.me/9779761118740?text=Enquiry%20for%20MG%20ZS%20EV">Enquire Now ↗</a></div>
-</article>
+      <article class="car-card">
+        <div class="car-photo">
+          <span class="car-label">ELECTRIC HATCHBACK</span>
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+            alt="Car photo reference for BYD Dolphin"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/263128/b9f36b?text=BYD+Dolphin';">
+        </div>
+        <div class="car-info">
+          <div class="eyebrow">03 · City explorer</div>
+          <h3>BYD Dolphin</h3>
+          <div class="car-description">Electric hatchback</div>
+          <div class="car-specs">
+            <div class="car-spec"><span>Seating</span><strong>5 passengers</strong></div>
+            <div class="car-spec"><span>Power</span><strong>Electric</strong></div>
+            <div class="car-spec"><span>Ideal for</span><strong>Urban travel</strong></div>
+            <div class="car-spec"><span>Price</span><strong>Request quote</strong></div>
+          </div>
+          <a href="#contact" class="btn btn-primary car-book" data-car="BYD Dolphin">Enquire About This Car ↗</a>
+        </div>
+      </article>
 
-<article class="car">
-<div class="car-art"><svg viewBox="0 0 300 130" role="img" aria-label="Stylized BYD Sealion 7 premium SUV"><path d="M19 88L36 69L74 56L107 33Q120 26 139 27H198Q219 33 232 53L250 66L276 78L280 98H19Z" fill="#b8a8e6" stroke="#e9e1ff" stroke-width="2"/><path d="M84 55L113 35H144V57H83ZM153 35H194Q207 39 220 57H153Z" fill="#2b2647" stroke="#c8b8f0" stroke-width="2"/><path d="M24 80H57V89H22Z" fill="#f5f1ff"/><circle cx="79" cy="98" r="20" fill="#08110d" stroke="#afa5d0" stroke-width="4"/><circle cx="79" cy="98" r="8" fill="#a5ff68"/><circle cx="226" cy="98" r="20" fill="#08110d" stroke="#afa5d0" stroke-width="4"/><circle cx="226" cy="98" r="8" fill="#a5ff68"/></svg></div>
-<div class="car-info"><h3>BYD Sealion 7</h3><p>Premium electric SUV</p><div class="pills"><span class="pill">5 seats</span><span class="pill">Electric</span></div><a class="btn" href="https://wa.me/9779761118740?text=Enquiry%20for%20BYD%20Sealion%207">Enquire Now ↗</a></div>
-</article>
+      <article class="car-card">
+        <div class="car-photo">
+          <span class="car-label">FAMILY SUV</span>
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80"
+            alt="SUV photo reference for MG ZS EV"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/263128/b9f36b?text=MG+ZS+EV';">
+        </div>
+        <div class="car-info">
+          <div class="eyebrow">04 · Family journeys</div>
+          <h3>MG ZS EV</h3>
+          <div class="car-description">Electric SUV</div>
+          <div class="car-specs">
+            <div class="car-spec"><span>Seating</span><strong>5 passengers</strong></div>
+            <div class="car-spec"><span>Power</span><strong>Electric</strong></div>
+            <div class="car-spec"><span>Ideal for</span><strong>Family trips</strong></div>
+            <div class="car-spec"><span>Price</span><strong>Request quote</strong></div>
+          </div>
+          <a href="#contact" class="btn btn-primary car-book" data-car="MG ZS EV">Enquire About This Car ↗</a>
+        </div>
+      </article>
 
-</div>
-<p class="notice">Car graphics are illustrative, not actual vehicle photographs. Confirm vehicle availability, model, price and specifications before booking.</p>
-</div>
+      <article class="car-card">
+        <div class="car-photo">
+          <span class="car-label">ELECTRIC SUV</span>
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80"
+            alt="Automotive photo reference for another EV option"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/263128/b9f36b?text=Electric+SUV';">
+        </div>
+        <div class="car-info">
+          <div class="eyebrow">05 · Premium travel</div>
+          <h3>BYD Atto 3</h3>
+          <div class="car-description">Electric SUV</div>
+          <div class="car-specs">
+            <div class="car-spec"><span>Seating</span><strong>5 passengers</strong></div>
+            <div class="car-spec"><span>Power</span><strong>Electric</strong></div>
+            <div class="car-spec"><span>Ideal for</span><strong>Longer journeys</strong></div>
+            <div class="car-spec"><span>Price</span><strong>Request quote</strong></div>
+          </div>
+          <a href="#contact" class="btn btn-primary car-book" data-car="BYD Atto 3">Enquire About This Car ↗</a>
+        </div>
+      </article>
+
+      <article class="car-card">
+        <div class="car-photo">
+          <span class="car-label">MORE OPTIONS</span>
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80"
+            alt="Automotive photo reference for additional EV rentals"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x500/263128/b9f36b?text=More+EV+Options';">
+        </div>
+        <div class="car-info">
+          <div class="eyebrow">06 · Your choice</div>
+          <h3>Other EV Models</h3>
+          <div class="car-description">Ask about available vehicles</div>
+          <div class="car-specs">
+            <div class="car-spec"><span>Seating</span><strong>Model dependent</strong></div>
+            <div class="car-spec"><span>Power</span><strong>Electric</strong></div>
+            <div class="car-spec"><span>Ideal for</span><strong>Your itinerary</strong></div>
+            <div class="car-spec"><span>Price</span><strong>Request quote</strong></div>
+          </div>
+          <a href="#contact" class="btn btn-primary car-book" data-car="Other EV model">Find My EV ↗</a>
+        </div>
+      </article>
+
+    </div>
+    <p class="disclaimer">
+      Photo accuracy notice: external photos above are illustrative automotive
+      images and are not verified images of the exact listed models. Confirm
+      model, variant, specifications, availability and price before booking.
+    </p>
+  </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
-<div class="wrap"><div class="tag">OUR SERVICES</div><h2>Travel Made Simple</h2>
-<div class="services">
-<div class="tile"><div class="symbol">⌂</div><h3>City Rides</h3><p>Enquire about rides around Kathmandu Valley.</p></div>
-<div class="tile"><div class="symbol">✈</div><h3>Airport Transfers</h3><p>Arrange airport pickup and drop-off.</p></div>
-<div class="tile"><div class="symbol">⌖</div><h3>Private Trips</h3><p>Ask about journeys beyond Kathmandu.</p></div>
-<div class="tile"><div class="symbol">↗</div><h3>EV Partnerships</h3><p>EV owners can contact us about partnerships.</p></div>
-</div></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Travel your way</div>
+      <h2>Services Designed Around You.</h2>
+      <p>Tell us where you want to go, and enquire about the right vehicle and trip arrangement.</p>
+    </div>
+    <div class="service-grid">
+      <article class="info-card">
+        <div class="info-icon">↗</div>
+        <h3>Airport Transfers</h3>
+        <p>Enquire about electric car pickups and drop-offs for Kathmandu airport journeys.</p>
+      </article>
+      <article class="info-card">
+        <div class="info-icon">⌖</div>
+        <h3>City Travel</h3>
+        <p>Explore transport options for meetings, shopping, sightseeing and everyday travel.</p>
+      </article>
+      <article class="info-card">
+        <div class="info-icon">⌁</div>
+        <h3>Outstation Trips</h3>
+        <p>Discuss your destination, charging stops, itinerary and suitable EV with us.</p>
+      </article>
+      <article class="info-card">
+        <div class="info-icon">▣</div>
+        <h3>Business Travel</h3>
+        <p>Request transport arrangements for meetings, guests and corporate visits.</p>
+      </article>
+      <article class="info-card">
+        <div class="info-icon">◈</div>
+        <h3>Family Journeys</h3>
+        <p>Find a suitable vehicle based on passenger numbers, luggage and trip distance.</p>
+      </article>
+      <article class="info-card">
+        <div class="info-icon">⚡</div>
+        <h3>EV Rental Enquiries</h3>
+        <p>Tell us your preferred model and rental dates to request an availability check.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
-<section id="why">
-<div class="wrap"><div class="tag">WHY EV GO NEPAL</div><h2>Your Electric Travel Partner</h2>
-<div class="why">
-<article><h3>Simple Booking</h3><p class="muted">Contact us directly on WhatsApp.</p></article>
-<article><h3>Clear Pricing</h3><p class="muted">Confirm your fare before travelling.</p></article>
-<article><h3>Travel Options</h3><p class="muted">Ask about available vehicles and routes.</p></article>
-</div></div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">Why EV Go Nepal</div>
+      <h2>Modern Mobility.<br>Personal Service.</h2>
+      <p class="muted">
+        EV Go Nepal is being developed as a convenient way for customers
+        to enquire about electric vehicle rentals and connect with vehicle
+        owners for suitable travel arrangements.
+      </p>
+      <ul class="check-list">
+        <li>Multiple vehicle choices in one place</li>
+        <li>Direct communication about availability and pricing</li>
+        <li>Trip planning based on passenger and luggage needs</li>
+        <li>Electric mobility options for different journeys</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Talk to Our Team ↗</a>
+    </div>
+    <div class="feature-panel">
+      <div class="eyebrow">Our booking approach</div>
+      <h3>Clear. Convenient. Personal.</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div><strong>Choose a vehicle</strong><p>Browse the fleet and select your preferred EV.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div><strong>Share your trip details</strong><p>Send your date, destination, passenger count and service preference.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div><strong>Confirm your booking</strong><p>Agree on the final price, vehicle, inclusions and terms before payment.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="container split">
+    <div class="feature-panel">
+      <div class="eyebrow">EV owner network</div>
+      <h2>Own an EV?<br>Let's Work Together.</h2>
+      <p class="muted">
+        We welcome enquiries from electric vehicle owners interested in
+        exploring potential rental and travel partnerships.
+      </p>
+      <ul class="check-list">
+        <li>Discuss your vehicle and availability</li>
+        <li>Agree on rental rates and payment terms</li>
+        <li>Clarify insurance and responsibility for damages</li>
+        <li>Set out booking, cancellation and service conditions</li>
+      </ul>
+      <a class="btn btn-primary" href="#contact" data-partner="yes">Become a Partner ↗</a>
+    </div>
+    <div>
+      <div class="eyebrow">A partnership built on clarity</div>
+      <h2>Grow With EV Go Nepal.</h2>
+      <p class="muted">
+        Our goal is to build a reliable network of vehicle owners and
+        customers. Any partnership will depend on agreed terms, customer
+        demand and vehicle suitability.
+      </p>
+      <div class="benefit-grid" style="grid-template-columns:1fr">
+        <article class="info-card">
+          <h3>01. Share Your Vehicle</h3>
+          <p>Tell us your make, model, year and availability.</p>
+        </article>
+        <article class="info-card">
+          <h3>02. Agree on the Terms</h3>
+          <p>Discuss rates, operating costs, insurance and responsibilities.</p>
+        </article>
+        <article class="info-card">
+          <h3>03. Explore Bookings</h3>
+          <p>Review genuine customer enquiries and confirm each trip before accepting it.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / BOOKING -->
 <section id="contact">
-<div class="wrap cta"><div class="tag">PLAN YOUR JOURNEY</div><h2>Where would you like to go?</h2>
-<p>Send us your pickup location, destination, travel date and passenger count to enquire about your trip.</p>
-<a class="btn" href="https://wa.me/9779761118740?text=Hello%20EV%20Go%20Nepal%21%0APickup%3A%20%0ADestination%3A%20%0ADate%3A%20%0APassengers%3A%20">Book on WhatsApp ↗</a>
-<div class="muted" style="margin-top:18px">Phone: 9761118740<br>Email: evgonep@gmail.com<br>Kathmandu, Nepal</div>
-</div>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Let's plan your journey</div>
+      <h2>Request a Rental Quote.</h2>
+      <p>Fill in the details below. Your enquiry will open in WhatsApp for you to review and send.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <h3>Get in Touch</h3>
+        <p class="muted">Tell us what you need, and we can discuss vehicle options and trip arrangements.</p>
+
+        <div class="contact-detail">
+          <span>WhatsApp / Phone</span>
+          <a href="https://wa.me/9779761118740" target="_blank" rel="noopener noreferrer">+977 9761118740</a>
+        </div>
+        <div class="contact-detail">
+          <span>Email</span>
+          <a href="mailto:evgonep@gmail.com">evgonep@gmail.com</a>
+        </div>
+        <div class="contact-detail">
+          <span>Service area</span>
+          <strong>Kathmandu, Nepal</strong>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/9779761118740" target="_blank" rel="noopener noreferrer">
+          Chat on WhatsApp ↗
+        </a>
+      </div>
+
+      <form class="form-panel" id="bookingForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="customerName">Your name *</label>
+            <input id="customerName" name="name" required maxlength="80" placeholder="Enter your name">
+          </div>
+          <div class="field">
+            <label for="customerPhone">Your phone number *</label>
+            <input id="customerPhone" name="phone" type="tel" required maxlength="25" placeholder="Your contact number">
+          </div>
+          <div class="field">
+            <label for="carSelect">Preferred vehicle *</label>
+            <select id="carSelect" name="car" required>
+              <option value="">Select a vehicle</option>
+              <option>BYD Atto 2</option>
+              <option>Tata Nexon EV</option>
+              <option>BYD Dolphin</option>
+              <option>MG ZS EV</option>
+              <option>BYD Atto 3</option>
+              <option>Other EV model</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tripType">Service type *</label>
+            <select id="tripType" name="service" required>
+              <option value="">Select service</option>
+              <option>City travel</option>
+              <option>Airport transfer</option>
+              <option>Outstation trip</option>
+              <option>Business travel</option>
+              <option>Family trip</option>
+              <option>EV owner partnership</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tripDate">Preferred date</label>
+            <input id="tripDate" name="date" type="date">
+          </div>
+          <div class="field">
+            <label for="passengers">Passengers</label>
+            <select id="passengers" name="passengers">
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="tripDetails">Pickup, destination and other details</label>
+            <textarea id="tripDetails" name="details" maxlength="1500"
+              placeholder="Where are you travelling? Do you need a driver? Any luggage?"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Enquiry on WhatsApp ↗</button>
+        <p class="form-help">No payment is taken through this form. Your WhatsApp message must be sent by you.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Helpful information</div>
+      <h2>Frequently Asked Questions.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How do I book an electric vehicle?</summary>
+        <p>Choose a vehicle, submit the enquiry form and send the generated WhatsApp message. Your booking is not confirmed until availability and terms have been agreed.</p>
+      </details>
+      <details>
+        <summary>How much does an EV rental cost?</summary>
+        <p>Pricing depends on the vehicle, trip distance, duration, driver arrangement and included services. Contact us for a quote before confirming.</p>
+      </details>
+      <details>
+        <summary>Can I request a car with a driver?</summary>
+        <p>Yes, you can request a driver in your enquiry. Driver availability and charges must be confirmed for your trip.</p>
+      </details>
+      <details>
+        <summary>Are charging costs and parking included?</summary>
+        <p>These expenses may vary by booking. Confirm charging, parking, tolls, driver meals or accommodation, overtime and other charges before accepting the quote.</p>
+      </details>
+      <details>
+        <summary>Can I partner with EV Go Nepal as a car owner?</summary>
+        <p>Yes, you can enquire about a potential partnership. Vehicle suitability, customer demand, rates, insurance and responsibilities need to be agreed first.</p>
+      </details>
+      <details>
+        <summary>Are the cars shown available right now?</summary>
+        <p>The website displays vehicle options for enquiries. Contact us to verify the exact model, vehicle photographs, availability and rental conditions.</p>
+      </details>
+    </div>
+  </div>
 </section>
 </main>
 
-<footer><div class="wrap"><strong>EV GO <span class="green">NEPAL.</span></strong><p>Move Green. Explore More.</p>© 2026 EV Go Nepal. All rights reserved.</div></footer>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-icon">EV</span>
+          <span>EV GO NEPAL<small>MOVE ELECTRIC</small></span>
+        </a>
+        <p style="margin-top:17px;max-width:330px">
+          Connecting travellers with electric mobility options for journeys across Nepal.
+        </p>
+      </div>
+      <div>
+        <div class="footer-title">Explore</div>
+        <ul>
+          <li><a href="#fleet">Our Fleet</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#partners">Partner With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <ul>
+          <li><a href="https://wa.me/9779761118740" target="_blank" rel="noopener noreferrer">WhatsApp: 9761118740</a></li>
+          <li><a href="mailto:evgonep@gmail.com">evgonep@gmail.com</a></li>
+          <li>Kathmandu, Nepal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> EV Go Nepal. All rights reserved.
+      Vehicle availability, prices and specifications are subject to confirmation.
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/9779761118740"
+  target="_blank" rel="noopener noreferrer" aria-label="Contact EV Go Nepal on WhatsApp">
+  WhatsApp ↗
+</a>
+
+<script>
+(function(){
+  "use strict";
+
+  var menuBtn = document.getElementById("menuBtn");
+  var navLinks = document.getElementById("navLinks");
+
+  menuBtn.addEventListener("click", function(){
+    var open = navLinks.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.textContent = open ? "✕ Close" : "☰ Menu";
+  });
+
+  navLinks.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click", function(){
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.textContent = "☰ Menu";
+    });
+  });
+
+  document.querySelectorAll("[data-car]").forEach(function(link){
+    link.addEventListener("click", function(){
+      var select = document.getElementById("carSelect");
+      var car = link.getAttribute("data-car");
+      for (var i = 0; i < select.options.length; i++) {
+        if (select.options[i].text === car) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll("[data-partner]").forEach(function(link){
+    link.addEventListener("click", function(){
+      document.getElementById("tripType").value = "EV owner partnership";
+    });
+  });
+
+  var dateField = document.getElementById("tripDate");
+  var now = new Date();
+  var localDate = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
+    .toISOString().slice(0,10);
+  dateField.min = localDate;
+
+  document.getElementById("bookingForm").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    var name = document.getElementById("customerName").value.trim();
+    var phone = document.getElementById("customerPhone").value.trim();
+    var car = document.getElementById("carSelect").value;
+    var service = document.getElementById("tripType").value;
+    var date = dateField.value || "Not specified";
+    var passengers = document.getElementById("passengers").value;
+    var details = document.getElementById("tripDetails").value.trim();
+
+    if (!name || !phone || !car || !service) {
+      alert("Please complete all required fields.");
+      return;
+    }
+
+    var message = [
+      "Hello EV Go Nepal! I would like to enquire about a booking.",
+      "",
+      "Name: " + name,
+      "Phone: " + phone,
+      "Vehicle: " + car,
+      "Service: " + service,
+      "Preferred date: " + date,
+      "Passengers: " + passengers,
+      "Trip details: " + (details || "Not specified"),
+      "",
+      "Please confirm availability and the total rental price."
+    ].join("\n");
+
+    var url = "https://wa.me/9779761118740?text=" + encodeURIComponent(message);
+    var opened = window.open(url, "_blank", "noopener,noreferrer");
+
+    if (!opened) {
+      window.location.href = url;
+    }
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
