@@ -1,6 +1,5 @@
 <html lang="en">
-<head> 
-<meta name="google-site-verification" content="yDXChXRNbQHuw6gyULbifmzHkKFz8mFAdvNxwq0OZCI" />
+<head><meta name="google-site-verification" content="yDXChXRNbQHuw6gyULbifmzHkKFz8mFAdvNxwq0OZCI" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101b25">
