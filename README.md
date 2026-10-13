@@ -1,10 +1,11 @@
 <html lang="en">
-<head><meta name="google-site-verification" content="yDXChXRNbQHuw6gyULbifmzHkKFz8mFAdvNxwq0OZCI" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101b25">
-<meta name="description" content="Discover electric vehicle rental options in Nepal with EV Go Nepal. Search vehicles, plan your journey and send a booking enquiry.">
-<title>EV Go Nepal — Move Different</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b25">
+  <meta name="google-site-verification" content="yDXChXRNbQHuw6gyULbifmzHkKFz8mFAdvNxwq0OZCI" />
+  <meta name="description" content="Discover electric vehicle rental options in Nepal with EV Go Nepal. Search vehicles, plan your journey and send a booking enquiry.">
+  <title>EV Go Nepal – Move Different</title>
 <style>
 :root{
  --ink:#101b25;--ink2:#1b303b;--lime:#c8f477;--paper:#f5f7f3;
