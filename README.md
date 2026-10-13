@@ -1,6 +1,9 @@
 
 <html lang="en">
 <head>
+  <title>EV Go Nepal | EV Rental</title>
+  <meta name="google-site-verification" content="YOUR_ACTUAL_CODE" />
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101b25">
