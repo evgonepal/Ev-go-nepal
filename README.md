@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="yDXChXRNbQHuw6gyULbifmzHkKFz8mFAdvNxwq0OZCI">
 <meta name="description" content="EV Go Nepal offers electric vehicle rental services in Kathmandu, Pokhara, Chitwan and across Nepal. Book an EV for city travel, tours and airport transfers.">
