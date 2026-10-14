@@ -1,11 +1,28 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101b25">
-  <meta name="google-site-verification" content="yDXChXRNbQHuw6gyULbifmzHkKFz8mFAdvNxwq0OZCI" />
-  <meta name="description" content="Discover electric vehicle rental options in Nepal with EV Go Nepal. Search vehicles, plan your journey and send a booking enquiry.">
-  <title>EV Go Nepal – Move Different</title>
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="rntLFe6MRvxKpA5nyD22Joik804YWPIROvO7_zD6ALs">
+
+  <!-- SEO -->
+  <meta name="description" content="Looking for electric car rental in Kathmandu, Nepal? EV Go Nepal helps you enquire about BYD, Tata Nexon EV and other electric vehicles for city trips, airport transfers and journeys across Nepal.">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author" content="EV Go Nepal">
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="EV Go Nepal | Electric Car Rental in Kathmandu, Nepal">
+  <meta property="og:description" content="Explore electric vehicle rental options in Nepal. Enquire about EVs, trip prices and owner partnerships with EV Go Nepal.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EV Go Nepal">
+
+  <title>EV Go Nepal | Electric Car Rental in Kathmandu, Nepal</title>
+
 <style>
 :root{
  --ink:#101b25;--ink2:#1b303b;--lime:#c8f477;--paper:#f5f7f3;
@@ -65,9 +82,7 @@ nav{min-height:76px;display:flex;align-items:center;justify-content:space-betwee
 .search-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr auto;gap:10px;align-items:end}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0}
 label{font-size:.82rem;font-weight:800}
-.field input,.field select,.field textarea,.search-grid input,.search-grid select{
-width:100%;min-width:0;padding:12px;border:1px solid #dce3dd;border-radius:10px;background:white;color:var(--ink);outline:none
-}
+.field input,.field select,.field textarea,.search-grid input,.search-grid select{width:100%;min-width:0;padding:12px;border:1px solid #dce3dd;border-radius:10px;background:white;color:var(--ink);outline:none}
 input:focus,select:focus,textarea:focus{border-color:#83ac4d;box-shadow:0 0 0 3px #c8f47755}
 .section-head{max-width:730px;margin-bottom:28px}
 .section-head p{max-width:670px}
@@ -151,6 +166,7 @@ footer li{margin:8px 0}
 footer a:hover{color:var(--lime)}
 .bottom{border-top:1px solid #34424a;margin-top:25px;padding-top:15px;color:#bdc9cf;font-size:.8rem}
 .whatsapp{position:fixed;right:17px;bottom:17px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#20c968;color:white;font-size:1.5rem;box-shadow:0 5px 20px #0003;z-index:30}
+
 @media(max-width:920px){
  .search-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .car-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -184,21 +200,34 @@ footer a:hover{color:var(--lime)}
  .full{grid-column:auto}
  .booking-form,.host-form,.booking-aside{padding:18px}
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *{transition:none!important}
+}
 </style>
 </head>
-<body>
 
+<body>
 <div class="top">
- <div class="wrap"><span>⚡ EV GO NEPAL · ELECTRIC JOURNEYS</span><span>WhatsApp: 9761118740</span></div>
+ <div class="wrap">
+  <span>⚡ EV GO NEPAL · ELECTRIC JOURNEYS</span>
+  <span>WhatsApp: 9761118740</span>
+ </div>
 </div>
 
 <header>
  <nav class="wrap">
-  <a class="brand" href="#home"><span class="brand-icon">⚡</span><span>EV GO NEPAL<small>MOVE DIFFERENT</small></span></a>
+  <a class="brand" href="#home">
+   <span class="brand-icon">⚡</span>
+   <span>EV GO NEPAL<small>MOVE DIFFERENT</small></span>
+  </a>
   <button id="menu" aria-expanded="false" aria-controls="navlinks">☰ Menu</button>
   <div class="navlinks" id="navlinks">
-   <a href="#home">Home</a><a href="#cars">Find an EV</a><a href="#destinations">Destinations</a><a href="#booking">Booking</a><a href="#host">List your EV</a>
+   <a href="#home">Home</a>
+   <a href="#cars">Find an EV</a>
+   <a href="#destinations">Destinations</a>
+   <a href="#booking">Booking</a>
+   <a href="#host">List your EV</a>
   </div>
   <a class="btn green nav-cta" href="#booking">Plan your trip ↗</a>
  </nav>
@@ -211,13 +240,25 @@ footer a:hover{color:var(--lime)}
    <div class="eyebrow">A new way to move around Nepal</div>
    <h1>Find your ride.<br><span>Feel the freedom.</span></h1>
    <p>Explore electric car rental options for city travel, family journeys, airport transfers and road trips. Tell us what you need, and enquire about a suitable vehicle.</p>
-   <div class="actions"><a class="btn green" href="#search-panel">Find my EV ↓</a><a class="btn white-btn" href="#host">I'm an EV owner ↗</a></div>
-   <div class="hero-points"><span>✓ Direct enquiries</span><span>✓ Trip-specific quotes</span><span>✓ EV owner network</span></div>
+   <div class="actions">
+    <a class="btn green" href="#search-panel">Find my EV ↓</a>
+    <a class="btn white-btn" href="#host">I'm an EV owner ↗</a>
+   </div>
+   <div class="hero-points">
+    <span>✓ Direct enquiries</span>
+    <span>✓ Trip-specific quotes</span>
+    <span>✓ EV owner network</span>
+   </div>
   </div>
   <div class="hero-photo">
    <img src="https://www.byd.com/material/byd-site/np/atto2/3.jpg" alt="BYD Atto 2 electric SUV on the road" onerror="this.hidden=true;document.getElementById('heroFallback').hidden=false">
-   <div class="image-fallback" id="heroFallback" hidden><div><strong>🚙</strong>Choose an electric ride</div></div>
-   <div class="hero-label"><div><b>Electric journeys, made simpler</b><br><small>EV Go Nepal</small></div><span>DISCOVER YOUR DRIVE ↗</span></div>
+   <div class="image-fallback" id="heroFallback" hidden>
+    <div><strong>🚙</strong>Choose an electric ride</div>
+   </div>
+   <div class="hero-label">
+    <div><b>Electric journeys, made simpler</b><br><small>EV Go Nepal</small></div>
+    <span>DISCOVER YOUR DRIVE ↗</span>
+   </div>
   </div>
  </div>
 </section>
@@ -225,12 +266,31 @@ footer a:hover{color:var(--lime)}
 <div class="search-wrap" id="search-panel">
  <div class="wrap">
   <form class="search-panel" id="tripSearch">
-   <div class="search-head"><h3>Where are you heading?</h3><small>Start with your trip details</small></div>
+   <div class="search-head">
+    <h3>Where are you heading?</h3>
+    <small>Start with your trip details</small>
+   </div>
    <div class="search-grid">
-    <div class="field"><label for="searchPickup">Pickup location</label><select id="searchPickup"><option>Kathmandu</option><option>Pokhara</option><option>Chitwan</option><option>Biratnagar</option><option>Butwal</option><option>Other location</option></select></div>
-    <div class="field"><label for="searchType">Vehicle type</label><select id="searchType"><option value="all">Any EV</option><option value="suv">Electric SUV</option><option value="compact">Compact EV</option></select></div>
-    <div class="field"><label for="startDate">Trip starts</label><input id="startDate" type="date" required></div>
-    <div class="field"><label for="endDate">Trip ends</label><input id="endDate" type="date" required></div>
+    <div class="field">
+     <label for="searchPickup">Pickup location</label>
+     <select id="searchPickup">
+      <option>Kathmandu</option><option>Pokhara</option><option>Chitwan</option><option>Biratnagar</option><option>Butwal</option><option>Other location</option>
+     </select>
+    </div>
+    <div class="field">
+     <label for="searchType">Vehicle type</label>
+     <select id="searchType">
+      <option value="all">Any EV</option><option value="suv">Electric SUV</option><option value="compact">Compact EV</option>
+     </select>
+    </div>
+    <div class="field">
+     <label for="startDate">Trip starts</label>
+     <input id="startDate" type="date" required>
+    </div>
+    <div class="field">
+     <label for="endDate">Trip ends</label>
+     <input id="endDate" type="date" required>
+    </div>
     <button class="btn green" type="submit">Find vehicles ↗</button>
    </div>
   </form>
@@ -239,7 +299,11 @@ footer a:hover{color:var(--lime)}
 
 <section id="destinations">
  <div class="wrap">
-  <div class="section-head"><div class="eyebrow">Choose your destination</div><h2>From city streets to mountain roads.</h2><p>Choose a destination to prefill your enquiry. Vehicle and route availability must be confirmed before booking.</p></div>
+  <div class="section-head">
+   <div class="eyebrow">Choose your destination</div>
+   <h2>From city streets to mountain roads.</h2>
+   <p>Choose a destination to prefill your enquiry. Vehicle and route availability must be confirmed before booking.</p>
+  </div>
   <div class="destination-grid">
    <a class="destination" href="#booking" data-destination="Kathmandu"><div class="dest-art">🏙️</div><b>Kathmandu</b><span>City travel & airport enquiries ↗</span></a>
    <a class="destination" href="#booking" data-destination="Pokhara"><div class="dest-art">🏔️</div><b>Pokhara</b><span>Lakeside & scenic journeys ↗</span></a>
@@ -251,38 +315,107 @@ footer a:hover{color:var(--lime)}
 
 <section class="cars-section" id="cars">
  <div class="wrap">
-  <div class="section-head"><div class="eyebrow">Explore electric vehicles</div><h2>Your next ride starts here.</h2><p>Browse example models and choose the one you want to enquire about. This is not a live inventory, and no vehicle is guaranteed to be available.</p></div>
-  <div class="car-tools"><input id="carSearch" type="search" placeholder="Search model, e.g. BYD or Nexon" aria-label="Search vehicle models"><select id="carFilter" aria-label="Filter by vehicle type"><option value="all">All EV types</option><option value="suv">Electric SUVs</option><option value="compact">Compact EVs</option></select></div>
+  <div class="section-head">
+   <div class="eyebrow">Explore electric vehicles</div>
+   <h2>Your next ride starts here.</h2>
+   <p>Browse example models and choose the one you want to enquire about. This is not a live inventory, and no vehicle is guaranteed to be available.</p>
+  </div>
+  <div class="car-tools">
+   <input id="carSearch" type="search" placeholder="Search model, e.g. BYD or Nexon" aria-label="Search vehicle models">
+   <select id="carFilter" aria-label="Filter by vehicle type">
+    <option value="all">All EV types</option><option value="suv">Electric SUVs</option><option value="compact">Compact EVs</option>
+   </select>
+  </div>
 
   <div class="car-grid" id="carGrid">
    <article class="car-card" data-name="byd atto 2" data-type="suv">
-    <div class="car-photo"><span class="tag">COMPACT SUV</span><img src="https://www.byd.com/material/byd-site/np/atto2/3.jpg" alt="BYD Atto 2 electric SUV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-fallback" hidden><strong>🚙</strong><b>BYD Atto 2</b><small>Official image unavailable</small></div></div>
-    <div class="car-body"><div class="car-type">Electric SUV</div><h3>BYD Atto 2</h3><p>A compact electric SUV to enquire about for city and everyday journeys.</p><div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div><button class="btn dark-btn choose-car" data-car="BYD Atto 2">Enquire about this EV</button><a class="details-link" href="https://www.byd.com/np/car/atto2" target="_blank" rel="noopener">Official model details ↗</a></div>
+    <div class="car-photo">
+     <span class="tag">COMPACT SUV</span>
+     <img src="https://www.byd.com/material/byd-site/np/atto2/3.jpg" alt="BYD Atto 2 electric SUV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     <div class="photo-fallback" hidden><strong>🚙</strong><b>BYD Atto 2</b><small>Official image unavailable</small></div>
+    </div>
+    <div class="car-body">
+     <div class="car-type">Electric SUV</div><h3>BYD Atto 2</h3>
+     <p>A compact electric SUV to enquire about for city and everyday journeys.</p>
+     <div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div>
+     <button class="btn dark-btn choose-car" data-car="BYD Atto 2">Enquire about this EV</button>
+     <a class="details-link" href="https://www.byd.com/np/car/atto2" target="_blank" rel="noopener">Official model details ↗</a>
+    </div>
    </article>
 
    <article class="car-card" data-name="tata nexon ev nexonk3" data-type="suv">
-    <div class="car-photo"><span class="tag">ELECTRIC SUV</span><img src="images/tata-nexon-ev.jpg" alt="Tata Nexon EV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-fallback"><strong>🚙</strong><b>Tata Nexon EV</b><small>Upload the exact model photo</small></div></div>
-    <div class="car-body"><div class="car-type">Electric SUV</div><h3>Tata Nexon EV</h3><p>An electric SUV model to ask about for family trips and city travel.</p><div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div><button class="btn dark-btn choose-car" data-car="Tata Nexon EV">Enquire about this EV</button><a class="details-link" href="https://cars.tatamotors.com.np/utility-vehicles/nexonk3-ev/gallery.php" target="_blank" rel="noopener">Official Tata photo gallery ↗</a></div>
+    <div class="car-photo">
+     <span class="tag">ELECTRIC SUV</span>
+     <img src="images/tata-nexon-ev.jpg" alt="Tata Nexon EV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     <div class="photo-fallback"><strong>🚙</strong><b>Tata Nexon EV</b><small>Upload the exact model photo</small></div>
+    </div>
+    <div class="car-body">
+     <div class="car-type">Electric SUV</div><h3>Tata Nexon EV</h3>
+     <p>An electric SUV model to ask about for family trips and city travel.</p>
+     <div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div>
+     <button class="btn dark-btn choose-car" data-car="Tata Nexon EV">Enquire about this EV</button>
+     <a class="details-link" href="https://cars.tatamotors.com.np/utility-vehicles/nexonk3-ev/gallery.php" target="_blank" rel="noopener">Official Tata photo gallery ↗</a>
+    </div>
    </article>
 
    <article class="car-card" data-name="byd dolphin" data-type="compact">
-    <div class="car-photo"><span class="tag">COMPACT EV</span><img src="images/byd-dolphin.jpg" alt="BYD Dolphin electric car" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-fallback"><strong>🚗</strong><b>BYD Dolphin</b><small>Upload the exact model photo</small></div></div>
-    <div class="car-body"><div class="car-type">Electric compact car</div><h3>BYD Dolphin</h3><p>A compact EV option to enquire about for urban journeys.</p><div class="specs"><span class="spec">Electric</span><span class="spec">Compact</span><span class="spec">Ask availability</span></div><button class="btn dark-btn choose-car" data-car="BYD Dolphin">Enquire about this EV</button><a class="details-link" href="https://www.byd.com/np/car/dolphin" target="_blank" rel="noopener">Official model details ↗</a></div>
+    <div class="car-photo">
+     <span class="tag">COMPACT EV</span>
+     <img src="images/byd-dolphin.jpg" alt="BYD Dolphin electric car" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     <div class="photo-fallback"><strong>🚗</strong><b>BYD Dolphin</b><small>Upload the exact model photo</small></div>
+    </div>
+    <div class="car-body">
+     <div class="car-type">Electric compact car</div><h3>BYD Dolphin</h3>
+     <p>A compact EV option to enquire about for urban journeys.</p>
+     <div class="specs"><span class="spec">Electric</span><span class="spec">Compact</span><span class="spec">Ask availability</span></div>
+     <button class="btn dark-btn choose-car" data-car="BYD Dolphin">Enquire about this EV</button>
+     <a class="details-link" href="https://www.byd.com/np/car/dolphin" target="_blank" rel="noopener">Official model details ↗</a>
+    </div>
    </article>
 
    <article class="car-card" data-name="mg zs ev" data-type="suv">
-    <div class="car-photo"><span class="tag">ELECTRIC SUV</span><img src="https://news.mgmotor.eu/wp-content/uploads/2021/01/MG-ZS-EV-dynamic.jpg" alt="MG ZS EV electric SUV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-fallback" hidden><strong>🚙</strong><b>MG ZS EV</b><small>Official image unavailable</small></div></div>
-    <div class="car-body"><div class="car-type">Electric SUV</div><h3>MG ZS EV</h3><p>An electric SUV model to enquire about for family and leisure trips.</p><div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div><button class="btn dark-btn choose-car" data-car="MG ZS EV">Enquire about this EV</button><a class="details-link" href="https://news.mgmotor.eu/sv/image-bank/mg-zs-ev/" target="_blank" rel="noopener">Official MG image bank ↗</a></div>
+    <div class="car-photo">
+     <span class="tag">ELECTRIC SUV</span>
+     <img src="https://news.mgmotor.eu/wp-content/uploads/2021/01/MG-ZS-EV-dynamic.jpg" alt="MG ZS EV electric SUV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     <div class="photo-fallback" hidden><strong>🚙</strong><b>MG ZS EV</b><small>Official image unavailable</small></div>
+    </div>
+    <div class="car-body">
+     <div class="car-type">Electric SUV</div><h3>MG ZS EV</h3>
+     <p>An electric SUV model to enquire about for family and leisure trips.</p>
+     <div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div>
+     <button class="btn dark-btn choose-car" data-car="MG ZS EV">Enquire about this EV</button>
+     <a class="details-link" href="https://news.mgmotor.eu/sv/image-bank/mg-zs-ev/" target="_blank" rel="noopener">Official MG image bank ↗</a>
+    </div>
    </article>
 
    <article class="car-card" data-name="tata tiago ev" data-type="compact">
-    <div class="car-photo"><span class="tag">CITY EV</span><img src="images/tata-tiago-ev.jpg" alt="Tata Tiago EV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-fallback"><strong>🚗</strong><b>Tata Tiago EV</b><small>Upload the exact model photo</small></div></div>
-    <div class="car-body"><div class="car-type">Electric compact car</div><h3>Tata Tiago EV</h3><p>A compact electric model to ask about for local journeys.</p><div class="specs"><span class="spec">Electric</span><span class="spec">Compact</span><span class="spec">Ask availability</span></div><button class="btn dark-btn choose-car" data-car="Tata Tiago EV">Enquire about this EV</button><a class="details-link" href="https://cars.tatamotors.com.np/" target="_blank" rel="noopener">Tata Motors Nepal ↗</a></div>
+    <div class="car-photo">
+     <span class="tag">CITY EV</span>
+     <img src="images/tata-tiago-ev.jpg" alt="Tata Tiago EV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     <div class="photo-fallback"><strong>🚗</strong><b>Tata Tiago EV</b><small>Upload the exact model photo</small></div>
+    </div>
+    <div class="car-body">
+     <div class="car-type">Electric compact car</div><h3>Tata Tiago EV</h3>
+     <p>A compact electric model to ask about for local journeys.</p>
+     <div class="specs"><span class="spec">Electric</span><span class="spec">Compact</span><span class="spec">Ask availability</span></div>
+     <button class="btn dark-btn choose-car" data-car="Tata Tiago EV">Enquire about this EV</button>
+     <a class="details-link" href="https://cars.tatamotors.com.np/" target="_blank" rel="noopener">Tata Motors Nepal ↗</a>
+    </div>
    </article>
 
    <article class="car-card" data-name="byd atto 3" data-type="suv">
-    <div class="car-photo"><span class="tag">ELECTRIC SUV</span><img src="images/byd-atto-3.jpg" alt="BYD Atto 3 electric SUV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="photo-fallback"><strong>🚙</strong><b>BYD Atto 3</b><small>Upload the exact model photo</small></div></div>
-    <div class="car-body"><div class="car-type">Electric SUV</div><h3>BYD Atto 3</h3><p>An electric SUV model to enquire about for longer journeys.</p><div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div><button class="btn dark-btn choose-car" data-car="BYD Atto 3">Enquire about this EV</button><a class="details-link" href="https://www.byd.com/np/" target="_blank" rel="noopener">BYD Nepal website ↗</a></div>
+    <div class="car-photo">
+     <span class="tag">ELECTRIC SUV</span>
+     <img src="images/byd-atto-3.jpg" alt="BYD Atto 3 electric SUV" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     <div class="photo-fallback"><strong>🚙</strong><b>BYD Atto 3</b><small>Upload the exact model photo</small></div>
+    </div>
+    <div class="car-body">
+     <div class="car-type">Electric SUV</div><h3>BYD Atto 3</h3>
+     <p>An electric SUV model to enquire about for longer journeys.</p>
+     <div class="specs"><span class="spec">Electric</span><span class="spec">SUV</span><span class="spec">Ask availability</span></div>
+     <button class="btn dark-btn choose-car" data-car="BYD Atto 3">Enquire about this EV</button>
+     <a class="details-link" href="https://www.byd.com/np/" target="_blank" rel="noopener">BYD Nepal website ↗</a>
+    </div>
    </article>
   </div>
   <div class="empty" id="empty">No matching models. Try another search or select all EV types.</div>
@@ -338,8 +471,20 @@ footer a:hover{color:var(--lime)}
 
 <section class="host" id="host">
  <div class="wrap host-grid">
-  <div><div class="eyebrow" style="color:var(--lime)">For EV owners</div><h2>Turn your EV into a partnership opportunity.</h2><p>EV Go Nepal aims to connect vehicle owners with potential rental enquiries. Tell us about your vehicle to discuss whether a partnership is suitable.</p><ul class="host-list"><li><span>✓</span>Share your model and location</li><li><span>✓</span>Discuss rental rates and commission</li><li><span>✓</span>Agree on insurance, screening and responsibilities</li><li><span>✓</span>Set clear terms in writing before accepting bookings</li></ul><p class="form-note">Listing a vehicle does not guarantee rental income or bookings.</p></div>
-  <form class="host-form" id="ownerForm"><h3>Owner registration enquiry</h3>
+  <div>
+   <div class="eyebrow" style="color:var(--lime)">For EV owners</div>
+   <h2>Turn your EV into a partnership opportunity.</h2>
+   <p>EV Go Nepal aims to connect vehicle owners with potential rental enquiries. Tell us about your vehicle to discuss whether a partnership is suitable.</p>
+   <ul class="host-list">
+    <li><span>✓</span>Share your model and location</li>
+    <li><span>✓</span>Discuss rental rates and commission</li>
+    <li><span>✓</span>Agree on insurance, screening and responsibilities</li>
+    <li><span>✓</span>Set clear terms in writing before accepting bookings</li>
+   </ul>
+   <p class="form-note">Listing a vehicle does not guarantee rental income or bookings.</p>
+  </div>
+  <form class="host-form" id="ownerForm">
+   <h3>Owner registration enquiry</h3>
    <div class="field"><label for="ownerName">Owner name *</label><input id="ownerName" name="ownerName" required maxlength="80"></div>
    <div class="field"><label for="ownerPhone">Contact number *</label><input id="ownerPhone" name="ownerPhone" required type="tel" maxlength="25"></div>
    <div class="field"><label for="ownerVehicle">Vehicle model *</label><input id="ownerVehicle" name="ownerVehicle" required maxlength="100" placeholder="e.g. BYD Atto 2"></div>
@@ -365,14 +510,20 @@ footer a:hover{color:var(--lime)}
 </section>
 
 <section class="contact">
- <div class="wrap contact-row"><div><h2>Ready to move differently?</h2><p>Tell us about your trip and start an enquiry.</p></div><a class="btn dark-btn" target="_blank" rel="noopener" href="https://wa.me/9779761118740?text=Hello%20EV%20Go%20Nepal%2C%20I%20want%20to%20enquire%20about%20an%20EV%20rental.">Chat on WhatsApp ↗</a></div>
+ <div class="wrap contact-row">
+  <div><h2>Ready to move differently?</h2><p>Tell us about your trip and start an enquiry.</p></div>
+  <a class="btn dark-btn" target="_blank" rel="noopener" href="https://wa.me/9779761118740?text=Hello%20EV%20Go%20Nepal%2C%20I%20want%20to%20enquire%20about%20an%20EV%20rental.">Chat on WhatsApp ↗</a>
+ </div>
 </section>
 </main>
 
 <footer>
  <div class="wrap">
   <div class="footer-grid">
-   <div><a class="brand" href="#home"><span class="brand-icon">⚡</span><span>EV GO NEPAL<small>ELECTRIC JOURNEYS</small></span></a><p style="margin-top:15px;max-width:340px">An EV rental enquiry and owner-partnership concept focused on making electric journeys easier to plan.</p></div>
+   <div>
+    <a class="brand" href="#home"><span class="brand-icon">⚡</span><span>EV GO NEPAL<small>ELECTRIC JOURNEYS</small></span></a>
+    <p style="margin-top:15px;max-width:340px">An EV rental enquiry and owner-partnership concept focused on making electric journeys easier to plan.</p>
+   </div>
    <div><h3>Explore</h3><ul><li><a href="#cars">Find an EV</a></li><li><a href="#destinations">Destinations</a></li><li><a href="#booking">Booking enquiry</a></li><li><a href="#host">Owner partnership</a></li></ul></div>
    <div><h3>Contact</h3><ul><li><a href="https://wa.me/9779761118740">WhatsApp: 9761118740</a></li><li><a href="mailto:evgonep@gmail.com">evgonep@gmail.com</a></li></ul></div>
   </div>
@@ -394,6 +545,7 @@ footer a:hover{color:var(--lime)}
   menu.setAttribute("aria-expanded",String(open));
   menu.textContent=open?"✕ Close":"☰ Menu";
  });
+
  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
   nav.classList.remove("open");
   menu.setAttribute("aria-expanded","false");
@@ -401,65 +553,83 @@ footer a:hover{color:var(--lime)}
  }));
 
  document.getElementById("year").textContent=new Date().getFullYear();
+
  const today=new Date();
  const localDate=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
  const start=document.getElementById("startDate");
  const end=document.getElementById("endDate");
  const pickupDate=document.getElementById("pickupDate");
  const returnDate=document.getElementById("returnDate");
+
  [start,end,pickupDate,returnDate].forEach(el=>el.min=localDate);
 
- start.addEventListener("change",()=>{end.min=start.value||localDate;if(end.value&&end.value<start.value)end.value=start.value;});
- pickupDate.addEventListener("change",()=>{returnDate.min=pickupDate.value||localDate;if(returnDate.value&&returnDate.value<pickupDate.value)returnDate.value=pickupDate.value;});
+ start.addEventListener("change",()=>{
+  end.min=start.value||localDate;
+  if(end.value&&end.value<start.value)end.value=start.value;
+ });
+
+ pickupDate.addEventListener("change",()=>{
+  returnDate.min=pickupDate.value||localDate;
+  if(returnDate.value&&returnDate.value<pickupDate.value)returnDate.value=pickupDate.value;
+ });
 
  // Show a placeholder only when a vehicle image fails.
  document.querySelectorAll(".car-photo").forEach(box=>{
   const img=box.querySelector("img");
   const fallback=box.querySelector(".photo-fallback");
+
   function sync(){
    const loaded=img.complete&&img.naturalWidth>0;
    img.hidden=!loaded;
    fallback.hidden=loaded;
   }
+
   img.addEventListener("load",sync);
   img.addEventListener("error",sync);
   sync();
  });
 
- // Search and filter the vehicle cards.
+ // Search and filter vehicle cards.
  const search=document.getElementById("carSearch");
  const filter=document.getElementById("carFilter");
  const cards=[...document.querySelectorAll(".car-card")];
  const empty=document.getElementById("empty");
+
  function applyFilters(){
   const q=search.value.trim().toLowerCase();
   let shown=0;
+
   cards.forEach(card=>{
    const matches=card.dataset.name.includes(q)&&(filter.value==="all"||card.dataset.type===filter.value);
    card.hidden=!matches;
    if(matches)shown++;
   });
+
   empty.style.display=shown?"none":"block";
  }
+
  search.addEventListener("input",applyFilters);
  filter.addEventListener("change",applyFilters);
 
- // Clicking a destination pre-fills the booking form.
+ // Clicking a destination prefills the booking form.
  document.querySelectorAll("[data-destination]").forEach(link=>{
   link.addEventListener("click",()=>{
    document.getElementById("destination").value=link.dataset.destination;
   });
  });
 
- // Search panel sends the chosen filters to the car collection and booking form.
+ // Search panel filters vehicles and transfers trip details.
  document.getElementById("tripSearch").addEventListener("submit",event=>{
   event.preventDefault();
+
   const type=document.getElementById("searchType").value;
   filter.value=type;
   applyFilters();
+
   document.getElementById("pickupLocation").value=document.getElementById("searchPickup").value;
-  document.getElementById("pickupDate").value=start.value;
-  document.getElementById("returnDate").value=end.value;
+  pickupDate.value=start.value;
+  returnDate.value=end.value;
+
   document.getElementById("cars").scrollIntoView({behavior:"smooth"});
  });
 
@@ -478,13 +648,17 @@ footer a:hover{color:var(--lime)}
 
  document.getElementById("bookingForm").addEventListener("submit",event=>{
   event.preventDefault();
+
   const form=event.currentTarget;
   if(!form.reportValidity())return;
+
   if(returnDate.value&&pickupDate.value&&returnDate.value<pickupDate.value){
    alert("Return date must be on or after pickup date.");
    return;
   }
+
   const d=new FormData(form);
+
   sendWhatsApp([
    "Hello EV Go Nepal! I would like a rental quote.",
    "Name: "+d.get("customer"),
@@ -502,9 +676,12 @@ footer a:hover{color:var(--lime)}
 
  document.getElementById("ownerForm").addEventListener("submit",event=>{
   event.preventDefault();
+
   const form=event.currentTarget;
   if(!form.reportValidity())return;
+
   const d=new FormData(form);
+
   sendWhatsApp([
    "Hello EV Go Nepal! I would like to discuss an EV owner partnership.",
    "Owner name: "+d.get("ownerName"),
